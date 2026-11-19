@@ -105,6 +105,18 @@ Additional useful sharing commands are:
 * If there is an issue, you can resync by stopping and reconnecting.
 * In session sharing, view all the available buffers with `:ls`.
 
+### Agent editing with MCP
+
+The [`mcp/`](mcp/) directory contains a small MCP server that edits a running
+Neovim over RPC. Combined with instant.nvim, an agent's edits appear live in
+your editor and are relayed to every other client in the session:
+
+```text
+agent -> MCP -> your Neovim -> instant.nvim -> other clients
+```
+
+See [`mcp/README.md`](mcp/README.md) for setup and tools.
+
 ### Help
 
 * If you encounter any problem, please don't hesitate to open an [Issue](https://github.com/jbyuki/instant.nvim/issues)
